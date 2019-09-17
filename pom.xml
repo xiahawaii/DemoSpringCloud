@@ -37,4 +37,7 @@
         <module>service-hello</module>
         <module>service-demo</module>
     </modules>
+
+
+    <!-- 添加备注 -->
 </project>
