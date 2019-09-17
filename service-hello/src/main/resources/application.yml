@@ -1,0 +1,15 @@
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8211/eureka/
+
+server:
+  port: 8202
+
+spring:
+  application:
+    name: service-hello
+
+feign:
+  hystrix:
+    enabled: true

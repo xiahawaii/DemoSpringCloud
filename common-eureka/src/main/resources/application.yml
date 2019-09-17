@@ -1,0 +1,15 @@
+server:
+  port: 8211                            # 启动端口
+
+eureka:
+  instance:
+    hostname: localhost                 # 路径
+  client:
+    register-with-eureka: false         # 设置false表明是EurekaServer
+    fetch-registry: false               # 设置false表明是EurekaServer
+    service-url:
+      default-zone: http://${eureka.instance.hostname}:${server.port}/eureka/
+
+spring:
+  application:
+    name: common-eureka

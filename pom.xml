@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <!-- 工程信息 -->
+    <groupId>com.xlo</groupId>
+    <artifactId>parent</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+    <description>只定义仓库和声明Module</description>
+
+    <!-- 定义仓库位置 -->
+    <!--<repositories>-->
+    <!--</repositories>-->
+
+    <!-- 定义插件仓库位置 -->
+    <!--<pluginRepositories>-->
+    <!--</pluginRepositories>-->
+
+    <!-- 声明module -->
+    <modules>
+
+        <!-- Parent Module -->
+        <module>common-parent</module>
+        <module>api-parent</module>
+        <module>service-parent</module>
+
+        <!-- Eureka服务 -->
+        <module>common-eureka</module>
+
+        <!-- API -->
+        <module>api-hello</module>
+
+        <!-- Service -->
+        <module>service-hello</module>
+        <module>service-demo</module>
+    </modules>
+</project>
